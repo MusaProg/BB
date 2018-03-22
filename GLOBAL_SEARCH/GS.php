@@ -3,7 +3,7 @@
  <head>
  	<meta charset="UTF-8">
  	<title>My page</title>
-	<link rel="stylesheet" href="global_search_page_style.css">
+	<link rel="stylesheet" href="css/global_search_page_style.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="fonts/rubik/rubik.css">
  </head>

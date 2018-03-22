@@ -18,7 +18,7 @@
  <head>
  	<meta charset="UTF-8">
  	<title>My page</title>
-	<link rel="stylesheet" href="global_search_page_style.css">
+	<link rel="stylesheet" href="css/global_search_page_style.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="fonts/rubik/rubik.css">
  </head>
@@ -30,8 +30,8 @@
 					<div class="search_block">
 						<form action="GS_ALL.php" method = "POST">
 							<div class="search_field">
-									<input type="text" id="search_input" name = "Global_Search_Line" class="placeholder_style" placeholder="Search...">
-									<input type="image" name = "Global_Search_Button"id="search_button" src="images/search_button.png" value="Search">
+									<input type="text" id="search_input" name="Global_Search_Line" class="placeholder_style" placeholder="Search...">
+									<input type="image" id="search_button" name = "Global_Search_Button" src="images/search_button.png" alt="Search">
 							</div>
 						</form>
 					</div>
@@ -216,14 +216,14 @@
 				</li>	
 				<li>
 						<div class="search_friends">
-							<a href="GS_Peoples.php">
+							<a href="GS_Peoples.php?Local_Search_Line=<?=$_REQUEST['Local_Search_Line']?>">
 								People
 							</a>
 						</div>
 				</li>
 				<li>
 					<div class="search_groups">
-						<a href="GS_Groups.php">
+						<a href="GS_Groups.php?Local_Search_Line=<?=$_REQUEST['Local_Search_Line']?>">
 							Groups
 						</a>
 					</div>
